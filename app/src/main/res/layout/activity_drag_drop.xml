@@ -1,0 +1,277 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#0099cc"
+    tools:context="com.almeida.tcc.DragDrop" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/aluno_carro"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/enviar"
+        android:layout_toRightOf="@+id/carro_tv"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/andar"
+            android:src="@drawable/andar"
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_marginTop="@dimen/espacoTop"
+            android:layout_marginLeft="@dimen/espacoLeft"/>
+
+        <ImageView
+            android:id="@+id/direita"
+            android:src="@drawable/direita"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_alignLeft="@+id/andar"
+            android:layout_alignTop="@+id/andar"
+            android:layout_marginTop="@dimen/distanciaH"/>
+
+        <ImageView
+            android:id="@+id/esquerda"
+            android:src="@drawable/esquerda"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_alignLeft="@+id/andar"
+            android:layout_alignTop="@+id/direita"
+            android:layout_marginTop="@dimen/distanciaH"/>
+
+        <ImageView
+            android:id="@+id/funcao"
+            android:src="@drawable/funcao"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_alignLeft="@+id/andar"
+            android:layout_alignTop="@+id/esquerda"
+            android:layout_marginTop="@dimen/distanciaH"/>
+
+
+        <ImageView
+            android:id="@+id/s01"
+            android:src="@drawable/circulo"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_alignTop="@+id/andar"
+            android:layout_alignLeft="@+id/andar"
+            android:layout_marginLeft="@dimen/distanciaV0"/>
+
+        <ImageView
+            android:id="@+id/s02"
+            android:src="@drawable/circulo"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_marginLeft="@dimen/distanciaV"
+            android:layout_alignTop="@+id/andar"
+            android:layout_alignLeft="@+id/s01"/>
+
+        <ImageView
+            android:id="@+id/s03"
+            android:src="@drawable/circulo"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_marginLeft="@dimen/distanciaV"
+            android:layout_alignTop="@+id/andar"
+            android:layout_alignLeft="@+id/s02"/>
+
+        <ImageView
+            android:id="@+id/s04"
+            android:src="@drawable/circulo"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_marginLeft="@dimen/distanciaV"
+            android:layout_alignTop="@+id/andar"
+            android:layout_alignLeft="@+id/s03"/>
+
+
+        <ImageView
+            android:id="@+id/s05"
+            android:src="@drawable/circulo"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_alignTop="@+id/direita"
+            android:layout_alignLeft="@+id/s04"/>
+
+        <ImageView
+            android:id="@+id/s06"
+            android:src="@drawable/circulo"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_alignTop="@+id/direita"
+            android:layout_alignLeft="@+id/s03" />
+
+        <ImageView
+            android:id="@+id/s07"
+            android:src="@drawable/circulo"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_alignTop="@+id/direita"
+            android:layout_alignLeft="@+id/s02"/>
+
+        <ImageView
+            android:id="@+id/s08"
+            android:src="@drawable/circulo"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_alignTop="@+id/direita"
+            android:layout_alignLeft="@+id/s01"/>
+
+        <ImageView
+            android:id="@+id/s09"
+            android:src="@drawable/circulo"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_alignTop="@+id/esquerda"
+            android:layout_alignLeft="@+id/s01"/>
+
+        <ImageView
+            android:id="@+id/s10"
+            android:src="@drawable/circulo"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_alignTop="@+id/esquerda"
+            android:layout_alignLeft="@+id/s02" />
+
+        <ImageView
+            android:id="@+id/s11"
+            android:src="@drawable/circulo"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_alignTop="@+id/esquerda"
+            android:layout_alignLeft="@+id/s03"/>
+
+        <ImageView
+            android:id="@+id/s12"
+            android:src="@drawable/circulo"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_alignTop="@+id/esquerda"
+            android:layout_alignLeft="@+id/s04"/>
+
+        <ImageView
+            android:id="@+id/f01"
+            android:src="@drawable/circulo"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_alignTop="@+id/funcao"
+            android:layout_alignLeft="@+id/s01"/>
+
+        <ImageView
+            android:id="@+id/f02"
+            android:src="@drawable/circulo"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_alignTop="@+id/funcao"
+            android:layout_alignLeft="@+id/s02" />
+
+        <ImageView
+            android:id="@+id/f03"
+            android:src="@drawable/circulo"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_alignTop="@+id/funcao"
+            android:layout_alignLeft="@+id/s03"/>
+
+        <ImageView
+            android:id="@+id/f04"
+            android:src="@drawable/circulo"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_alignTop="@+id/funcao"
+            android:layout_alignLeft="@+id/s04"/>
+
+        <ImageView
+            android:id="@+id/enviar"
+            android:src="@drawable/enviar"
+            android:layout_width="@dimen/enviar"
+            android:layout_height="@dimen/enviar"
+            android:onClick="enviar"
+            android:layout_alignTop="@+id/s04"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:id="@+id/limpar"
+            android:src="@drawable/circulo"
+            android:onClick="limpar"
+            android:layout_alignTop="@+id/funcao"
+            android:layout_alignRight="@+id/enviar"/>
+
+        <ImageView
+            android:id="@+id/apagar"
+            android:src="@drawable/circulo"
+
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"
+            android:layout_alignTop="@+id/esquerda"
+            android:layout_alignRight="@+id/enviar"/>
+
+
+
+        <ImageView
+            android:id="@+id/socketVazio"
+            android:src="@drawable/circulo"
+            android:visibility="invisible"
+            android:layout_width="@dimen/comando"
+            android:layout_height="@dimen/comando"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apagar"
+            android:id="@+id/textView2"
+            android:layout_alignTop="@+id/apagar"
+            android:layout_toLeftOf="@+id/apagar"
+            android:layout_toStartOf="@+id/apagar"
+            android:layout_marginTop="38dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Limpar"
+            android:id="@+id/textView"
+            android:layout_alignBottom="@+id/limpar"
+            android:layout_toLeftOf="@+id/limpar"
+            android:layout_toStartOf="@+id/limpar"
+            android:layout_marginBottom="35dp" />
+
+
+    </RelativeLayout>
+</LinearLayout>

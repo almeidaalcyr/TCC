@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="comando">100dp</dimen>
+    <dimen name="espacoTop">30dp</dimen>
+    <dimen name="espacoLeft">40dp</dimen>
+    <dimen name="distanciaH">120dp</dimen>
+    <dimen name="distanciaV0">170dp</dimen>
+    <dimen name="distanciaV">150dp</dimen>
+    <dimen name="enviar">200dp</dimen>
+</resources>
